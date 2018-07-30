@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5</title>
+  <!-- Bootstrap -->
+  <!-- ОНЛАЙН ПОДКЛЮЧЕНИЕ Bootstrap: -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <!-- ОНЛАЙН ПОДКЛЮЧЕНИЕ Bootstrap -->
+
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЕНИЕ Bootstrap для разработки и подсказок классов: -->
+  <link href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЕНИЕ Bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <header class="main-header">
+        <video class="main-header-video" src="videos/goldendust.mp4" autoplay loop muted></video>
+        <div class="main-header-wrapper">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="main-header-txt">
+                <h1 class="main-header-txt-title">
+                  Product name
+                </h1>
+                <ul class="main-header-txt-list">
+                  <li>
+                    <a href="#">Put on this page information about your product</a>
+                  </li>
+                  <li>
+                    <a href="#">A detailed description of your product</a>
+                  </li>
+                  <li>
+                    <a href="#">Tell us about the advantages and merits</a>
+                  </li>
+                  <li>
+                    <a href="#">Associate the page with the payment system</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-10">
+              <img class="main-header-image" src="https://placeimg.com/470/215/nature" alt="product" >
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main-video">
+          <h2 class="main-video-title">
+            Video library
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="main-video-item-name">Sunset</h3>
+              <video class="main-video-item" src="videos/sunset.mp4" preload="metadata" poster="img/astronomy.jpg" loop controls></video>
+            </div>
+            <div class="col-md-6">
+              <h3 class="main-video-item-name">Cartoon</h3>
+              <video class="main-video-item" preload="metadata"  loop muted controls>
+                <source src="videos/cartoon.mp4">
+              </video>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="main-video-item-name">Nature</h3>
+              <div class="main-video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/l6pDOwNeTrg" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-newform">
+          <h2 class="main-newform-title">
+             New form
+          </h2>
+          <form action="#" method="post">
+            <p><i>You may fill the follow form and get more information on your email</i><em>*</em></p>
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset>
+                  <legend>Contact</legend>
+                  <label for="name">Name <em>*</em></label>
+                  <input id="name" placeholder="James" required>
+                  <label for="surname">Surname <em>*</em></label>
+                  <input id="surname" placeholder="Smith" required>
+                  <label for="telephone">Phone</label>
+                  <input id="telephone" type="tel" placeholder="1234567890" pattern="[0-9]">
+                  <label for="email">Email <em>*</em></label>
+                  <input id="email" type="email" placeholder="jamessmith@gmail.com" required>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <legend>Personal information</legend>
+                  <label for="age">Age<em>*</em></label>
+                  <input id="age" type="number" step="1" min="0" max="150" placeholder="21" required>
+                  <label for="gender">Gender</label>
+                  <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <label for="comments">More information: </label>
+                  <textarea id="comments"></textarea>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset>
+                  <legend>Interersting directions</legend>
+                  <label for="ny">
+                    <input id="ny" type="checkbox"> New York
+                  </label>
+                  <label for="la">
+                    <input id="la" type="checkbox"> Los Angeles
+                  </label>
+                  <label for="other">
+                    <input id="other" type="checkbox">Other
+                  </label>
+                  <label for="date">Choose period for journey:
+                    <input id="date" type="month">
+                  </label>
+                  <label for="period">
+                    <input id="period" placeholder="Choose or write" list="period-list">
+                    <datalist id="period-list">
+                      <option value="1st two weeks"></option>
+                      <option value="2nd two weeks"></option>
+                    </datalist>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset class="main-newform-btns">
+                  <div>
+                    <input type="reset" value="Reset">
+                    <input type="image" src="img/header-list-item-icon.png" alt="Send">
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </form> 
+        </section>
+        <section class="main-about">
+          <div class="main-item-wrapper">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <div class="main-about-txt">
+                  <h2 class="main-about-txt-title">
+                    About your product
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
+                  </p>
+                  <p>
+                    Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-10">
+                <img class="main-about-image" src="https://placeimg.com/430/245/nature" alt="product">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-pluses">
+          <div class="main-item-wrapper main-pluses-wrapper">
+            <h2 class="main-pluses-title">
+              Dignity and pluses product
+            </h2>
+            <div class="main-pluses-list">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-pluses-list-item">
+                    Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-screenshots">
+          <div class="main-item-wrapper main-screenshots-wrapper">
+            <h2 class="main-screenshots-title">
+              Screenshots
+            </h2>
+            <div class="main-screenshots-list">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <article class="main-screenshots-list-item">
+                    <img class="main-screenshots-list-item-image" src="https://placeimg.com/200/150/nature" alt="product view">
+                    <h3 class="main-screenshots-list-item-title">
+                      The description for the image
+                    </h3>
+                    <p class="main-screenshots-list-item-txt">
+                      Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                    </p>
+                    <hr>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <article class="main-screenshots-list-item">
+                    <img class="main-screenshots-list-item-image" src="https://placeimg.com/200/150/nature" alt="product view">
+                    <h3 class="main-screenshots-list-item-title">
+                      The description for the image
+                    </h3>
+                    <p class="main-screenshots-list-item-txt">
+                      Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                    </p>
+                    <hr>
+                  </article>
+                </div><div class="col-md-6 col-xs-12">
+                  <article class="main-screenshots-list-item">
+                    <img class="main-screenshots-list-item-image" src="https://placeimg.com/200/150/nature" alt="product view">
+                    <h3 class="main-screenshots-list-item-title">
+                      The description for the image
+                    </h3>
+                    <p class="main-screenshots-list-item-txt">
+                      Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                    </p>
+                    <hr>
+                  </article>
+                </div><div class="col-md-6 col-xs-12">
+                  <article class="main-screenshots-list-item">
+                    <img class="main-screenshots-list-item-image" src="https://placeimg.com/200/150/nature" alt="product view">
+                    <h3 class="main-screenshots-list-item-title">
+                      The description for the image
+                    </h3>
+                    <p class="main-screenshots-list-item-txt">
+                      Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                    </p>
+                    <hr>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-reviews">
+          <div class="main-item-wrapper main-reviews-wrapper">
+            <h2 class="main-reviews-title">
+              Reviews
+            </h2>
+            <div class="main-reviews-list">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-reviews-list-item">
+                    <img class="main-reviews-list-item-image" src="https://placeimg.com/90/90/nature" alt="review author" width="75" height="75">
+                    <div class="main-reviews-list-item-txt">
+                      <p class="main-reviews-list-item-txt-review">
+                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                      </p>
+                      <p class="main-reviews-list-item-txt-author">
+                        Lourens S.
+                      </p>
+                    </div>	
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-reviews-list-item">
+                    <img class="main-reviews-list-item-image" src="https://placeimg.com/90/90/nature" alt="review author" width="75" height="75">
+                    <div class="main-reviews-list-item-txt">
+                      <p class="main-reviews-list-item-txt-review">
+                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                      </p>
+                      <p class="main-reviews-list-item-txt-author">
+                        Lourens S.
+                      </p>
+                    </div>	
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-reviews-list-item">
+                    <img class="main-reviews-list-item-image" src="https://placeimg.com/90/90/nature" alt="review author" width="75" height="75">
+                    <div class="main-reviews-list-item-txt">
+                      <p class="main-reviews-list-item-txt-review">
+                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                      </p>
+                      <p class="main-reviews-list-item-txt-author">
+                        Lourens S.
+                      </p>
+                    </div>	
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="main-reviews-list-item">
+                    <img class="main-reviews-list-item-image" src="https://placeimg.com/90/90/nature" alt="review author" width="75" height="75">
+                    <div class="main-reviews-list-item-txt">
+                      <p class="main-reviews-list-item-txt-review">
+                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                      </p>
+                      <p class="main-reviews-list-item-txt-author">
+                        Lourens S.
+                      </p>
+                    </div>	
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-buy">
+          <div class="main-item-wrapper main-buy-wrapper">
+            <h2 class="main-buy-title">
+              Buy it now
+            </h2>
+            <div class="main-buy-container">
+              <section class="main-buy-container-item">
+                <h3 class="main-buy-container-item-title">
+                  Standart
+                </h3>
+                <div class="main-buy-container-item-price">
+                  $100
+                </div>
+                <ol class="main-buy-container-item-list">
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                </ol>
+                <a class="main-buy-container-item-btn" href="#">
+                  Buy
+                </a>
+              </section>
+              <section class="main-buy-container-item">
+                <h3 class="main-buy-container-item-title">
+                  Premium
+                </h3>
+                <div class="main-buy-container-item-price">
+                  $150
+                </div>
+                <ol class="main-buy-container-item-list">
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                </ol>
+                <a class="main-buy-container-item-btn" href="#">
+                  Buy
+                </a>
+              </section>
+              <section class="main-buy-container-item">
+                <h3 class="main-buy-container-item-title">
+                  Lux
+                </h3>
+                <div class="main-buy-container-item-price">
+                  $200
+                </div>
+                <ol class="main-buy-container-item-list">
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                  <li>Porro officia cumque sint deleniti;</li>
+                  <li>Тemo facere rem vitae odit;</li>
+                  <li>Cum odio, iste quia doloribus autem;</li>
+                  <li>Aperiam nulla ea neque.</li>
+                </ol>
+                <a class="main-buy-container-item-btn" href="#">
+                  Buy
+                </a>
+              </section>
+            </div>		
+          </div>
+        </section>
+      </main>		
+    </div>
+    <footer class="main-footer">
+      <div class="main-footer-contacts">
+        <div class="main-item-wrapper main-footer-contacts-wrapper">
+          <h2 class="main-footer-contacts-title">
+            Contacts
+          </h2>
+          <div class="main-footer-contacts-container">
+            <form action="index.html" method="post">
+              <input type="text" name="name" placeholder="Your name:" size="70" required>
+              <input type="text" name="email" placeholder="Your email:" size="70" required>
+              <textarea placeholder="Your message:" cols="50" rows="4"></textarea>
+              <input type="submit" value="SEND">
+            </form>
+            <div>
+              <ul class="main-footer-contacts-list">
+                <li><a href="#">here_your_login_skype</a></li>
+                <li><a href="#">279679659</a></li>
+                <li><a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></li>
+                <li><a href="tel:+800045685555">80 00 4568 55 55</a></li>
+              </ul>
+              <div class="main-footer-contacts-social">
+                <a href="#">l</a>
+                <a href="#">f</a>
+                <a href="#">i</a>
+                <a href="#">g</a>
+                <a href="#">x</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer-copyrights">
+        Copyright &copy; 2014 Product name · PSD HTML CSS
+      </div>
+    </footer>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- ОНЛАЙН ПОДКЛЮЧЕНИЕ Jquery: -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <!-- ОНЛАЙН ПОДКЛЮЧЕНИЕ Jquery -->
+
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЕНИЕ Jquery для Bootstrap: -->
+  <script src="packages/jquery/jquery.min.js"></script>
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЕНИЕ Jquery для Bootstrap -->
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЧЕНИЕ Bootstrap js: -->
+  <script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- ЛОКАЛЬНОЕ ПОДКЛЮЧЧЕНИЕ Bootstrap js -->
+</body>
+</html>
