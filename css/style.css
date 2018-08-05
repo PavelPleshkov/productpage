@@ -568,6 +568,12 @@ body {
 	}
 }
 
+@media all and (max-width: 767px) {
+	.main-buy-wrapper {
+		padding: 30px 20px;
+	}
+}
+
 .main-buy-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -612,6 +618,13 @@ body {
 	.main-buy-container-item {
 		width: 80%;
 		margin: 0 auto;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.main-buy-container-item {
+		width: 100%;
+		/* margin: 0 auto; */
 	}
 }
 
